@@ -1,3 +1,26 @@
-<div id="firstdiv">
-  <h5>Add component</h5>
+<div class="container">
+  <div class="todo-list">
+
+    {{title}}
+    <div class="input-group">
+      <input type="text" placeholder="Things to do" #newTask>
+      <button class="add-button" (click)="addNewTask(newTask.value)">+</button>
+    </div>
+    <table>
+      <tr *ngFor="let task of tasks" class="even">
+        <td>
+          <pre>
+            {{task}}
+          </pre>
+        </td>
+        <td>
+          <button (click)="removeTask(task)" class="remove-button">X</button>
+          <button (click)="markAsDone(task)" class="done-button">Done</button>
+
+        </td>
+
+
+      
+    </table>
+  </div>
 </div>
