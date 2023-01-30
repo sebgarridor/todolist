@@ -3,7 +3,7 @@
   }
 
   .container {
-    padding-top: 160px;
+    
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -84,6 +84,7 @@
 
   td {
     margin-left: 1rem;
+    padding: 1rem 0.5rem;
   }
 
   .even {
@@ -99,3 +100,4 @@
   .is-done {
     text-decoration: line-through;
   }
+  
